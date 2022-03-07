@@ -3,8 +3,8 @@ src-git luci https://github.com/coolsnowwolf/luci
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git
-src-git butterfly https://github.com/jerryc127/hexo-theme-butterfly.git
-src-git argon-mod https://github.com/coLATin/argon-mod.git
+src-git butterfly git://github.com/jerryc127/hexo-theme-butterfly.git
+src-git argon-mod git://github.com/coLATin/argon-mod.git
 
 #src-git video https://github.com/openwrt/video.git
 #src-git targets https://github.com/openwrt/targets.git
