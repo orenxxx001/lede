@@ -35,12 +35,12 @@ detect_mt_dbdc() {
 						htmode=HT20
 						pb_smart=1
 						noscan=0
-						ssid="RR-2.4G-$(echo $macaddr | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
+						ssid="OpenWrt-2.4G-$(echo $macaddr | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
 						;;
 					rax0)
 						hwmode=11a
 						htmode=VHT80
-						ssid="RR-5G-$(maccalc add $macaddr 3145728 | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
+						ssid="OpenWrt-5G-$(maccalc add $macaddr 3145728 | awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)"
 						pb_smart=0
 						noscan=1
 						;;
@@ -66,8 +66,7 @@ detect_mt_dbdc() {
 					set wireless.default_${phyname}.network=lan
 					set wireless.default_${phyname}.mode=ap
 					set wireless.default_${phyname}.ssid=${ssid}
-					set wireless.default_${phyname}.encryption=psk2
-					set wireless.default_${phyname}.key=23456789DDop
+					set wireless.default_${phyname}.encryption=none
 				EOF
 				uci -q commit wireless
 			}
