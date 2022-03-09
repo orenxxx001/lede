@@ -68,7 +68,6 @@ detect_mt_dbdc() {
 					set wireless.default_${phyname}.ssid=${ssid}
 					set wireless.default_${phyname}.encryption=psk2
 					set wireless.default_${phyname}.key=23456789DDop#@！
-
 				EOF
 				uci -q commit wireless
 			}
