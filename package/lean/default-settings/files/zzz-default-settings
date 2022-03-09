@@ -58,11 +58,5 @@ echo 'hsts=0' > /root/.wgetrc
 rm -rf /tmp/luci-modulecache/
 rm -f /tmp/luci-indexcache
 
-sed -i "s/WPAPSK1=.*/WPAPSK1=23456789DDop/g" /etc/wireless/mt7615/mt7615.1.dat
-sed -i "s/WPAPSK1=.*/WPAPSK1=23456789DDop/g" /etc/wireless/mt7615/mt7615.2.dat
-sed -i 's/SSID1=.*/SSID1=RR-2G/g' /etc/wireless/mt7615/mt7615.1.dat
-sed -i 's/SSID1=.*/SSID1=RR-5G/g' /etc/wireless/mt7615/mt7615.2.dat
-sed -i 's/AuthMode=.*/AuthMode=WPAPSKWPA2PSK/g' /etc/wireless/mt7615/mt7615.2.dat
-sed -i 's/AuthMode=.*/AuthMode=WPAPSKWPA2PSK/g' /etc/wireless/mt7615/mt7615.1.dat
 
 exit 0
